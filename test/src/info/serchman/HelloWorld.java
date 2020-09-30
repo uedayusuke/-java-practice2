@@ -15,8 +15,16 @@ public class HelloWorld {
 		int x;
 		// 変数xに26を代入
 		x = 26;
-		// xを出力
+		// 変数xを出力
 		System.out.println(x);
+
+		// 変数yはString型(文字列)であると宣言
+		String y;
+		// yに"おはよう"を代入
+		y = "おはよう";
+		// 変数yを出力
+		System.out.println(y);
+
 		// 命令文のお尻には";"
 		// System.out.println("")→文字の出力
 		System.out.println("HelloWorld");
