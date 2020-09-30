@@ -11,6 +11,12 @@ public class HelloWorld {
 	// void→戻り値なし
 	// main→メソッド、プログラムを実行する管理、一番最初に実行される！
 	public static void main(String args[]) {
+		// 変数xはint型(整数)であると宣言
+		int x;
+		// 変数xに26を代入
+		x = 26;
+		// xを出力
+		System.out.println(x);
 		// 命令文のお尻には";"
 		// System.out.println("")→文字の出力
 		System.out.println("HelloWorld");
