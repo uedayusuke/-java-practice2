@@ -20,6 +20,13 @@ public class Variable2 {
 		int y2;
 		y2 = Integer.parseInt(x2);
 
+		/*
+		 文字→数値
+		 Integer.parseInt();
+		 数値→文字
+		 String.valueOf();
+		 */
+
 		//変数xにx1とx2を合わせたものを代入
 		x = x1 + x2;
 
