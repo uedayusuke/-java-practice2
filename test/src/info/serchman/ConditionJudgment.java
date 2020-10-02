@@ -19,5 +19,17 @@ public class ConditionJudgment {
 		if (umare >= 1989) {
 			System.out.println("平成生まれです");
 		}
+
+		/*
+		 else分
+		 if(条件){処理}
+		 else{処理}
+		 */
+		umare = 1968;
+		if (umare < 1989) {
+			System.out.println("昭和生まれです");
+		} else {
+			System.out.println("平成生まれです");
+		}
 	}
 }
