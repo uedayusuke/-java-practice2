@@ -9,8 +9,13 @@ public class Repetition {
 		/*
 		 for (初期化, 継続条件, 増減式){処理}
 		 */
-		for (int i = 1; i <= 10; i = i + 1) {
-			sum = sum + i;
+		/*
+		 省略形
+		 i = i + 1 → i++
+		 sum = sum + 1 → sum += i
+		 */
+		for (int i = 1; i <= 10; i++) {
+			sum += i;
 			System.out.println(i + ":途中合計：" + sum );
 		}
 		System.out.println("合計：" + sum);
