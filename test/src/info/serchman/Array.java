@@ -3,6 +3,10 @@ package info.serchman;
 // 27.配列
 public class Array {
 	public static void main(String args[]) {
+		/*
+		 型 変数名[] = new 型[x]
+		 (xは表の行数)
+		 */
 		String name[] = new String[3];
 		double height[] = new double[3];
 		name[0] = "山田";
