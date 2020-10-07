@@ -20,6 +20,7 @@ public class Array {
 		height[2] = 168.4;
 
 		// forで繰り返し
+		// 28.デバッグ
 		// ブレークポイントを設定し、デバックを行う
 		for (int i = 0; i <= 2; i++) {
 			System.out.println(name[i] + ":" + height[i] + "cm");
