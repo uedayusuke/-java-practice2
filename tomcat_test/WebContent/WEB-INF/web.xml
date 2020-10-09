@@ -4,6 +4,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
 version="2.4">
 <servlet>
+<!-- 下記2行で"info.searchman.HelloWorld"は"hello"に該当すると設定 -->
 <servlet-name>hello</servlet-name>
 <servlet-class>info.searchman.HelloWorld</servlet-class>
 </servlet>
@@ -12,8 +13,9 @@ version="2.4">
 <servlet-name>
 hello
 </servlet-name>
+<!-- 8.9行目で定義した"hello"のurlは"/servlet/hello"と定義 -->
 <url-pattern>
-/servlet/hello
+/xxx
 </url-pattern>
 </servlet-mapping>
 
