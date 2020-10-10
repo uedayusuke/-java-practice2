@@ -18,7 +18,9 @@
 	ＩＤ:<%=id%><br><br>
 	 パスワード:<%=pass%><br><br>
 
+	<!-- 以下でデータを引き渡す -->
 	<form action="index3.jsp" method="POST">
+		<!-- "hidden"で隠して持っていける -->
 		<input type="hidden" name="id" value="<%=id%>">
 		<input type="hidden" name="pass" value="<%=pass%>">
 		<input type="submit" value="次のページへ">
