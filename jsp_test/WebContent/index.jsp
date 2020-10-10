@@ -12,6 +12,7 @@
 	<%=mongon%><br>
 	<br>
 
+	<!-- 以下でデータを引き渡す -->
 	<form action="index2.jsp" method="POST">
 		ＩＤ: <input type="text" name="id"> パスワード: <input type="text" name="pass">
 		<br><br>
