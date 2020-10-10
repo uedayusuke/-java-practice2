@@ -18,5 +18,7 @@
 		 <input type="submit" value="submit">
 	</form>
 
+	<!-- JSPは、ブラウザからの最初のアクセスで、Javaプログラムに変換される。 -->
+
 </body>
 </html>
