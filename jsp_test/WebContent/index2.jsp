@@ -15,6 +15,8 @@
 		String pass = (String) request.getParameter("pass");
 	%>
 
+	ＩＤ:<%=id%><br><br>
+	 パスワード:<%=pass%><br><br>
 
 	<!-- 以下でデータを引き渡す -->
 	<form action="index3.jsp" method="POST">
