@@ -21,7 +21,7 @@
 	<!-- 以下でデータを引き渡す -->
 	<form action="index3.jsp" method="POST">
 		<!-- "hidden"で隠して持っていける -->
-		<!-- "hidden"はブラウザ(検証ツール)に出てしまうので重要なデータを書くのはNG!! -->
+		<!-- "hidden"はブラウザ(検証ツール)に出てしまうので重要なデータを書くのはNG! -->
 		<input type="hidden" name="id" value="<%=id%>">
 		<input type="hidden" name="pass" value="<%=pass%>">
 		<input type="submit" value="次のページへ">
