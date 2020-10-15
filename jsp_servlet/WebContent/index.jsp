@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html;charset=Windows-31J" %>
+<%@ page language="java" contentType="text/html;charset=UTF-8" %>
 
 <html>
 <head>
@@ -7,7 +7,7 @@
 <body>
 
 <%
-	String mongon = "‚h‚c‚ÆƒpƒXƒ[ƒh‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B";
+	String mongon = "ï¼©ï¼¤ã¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
 %>
 
 
@@ -16,7 +16,7 @@
 <br>
 
 <form action="/jsp_servlet/Login" method="POST">
-	‚h‚c: <input type="text" name="id">		ƒpƒXƒ[ƒh: <input type="text" name="pass">
+	ï¼©ï¼¤: <input type="text" name="id">		ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰: <input type="text" name="pass">
 	<br><br>
 
 	<input type="submit" value="submit">
