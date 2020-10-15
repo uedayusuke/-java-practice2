@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+// ServletはHttpServletを継承する
 public class LoginServlet extends HttpServlet {
 
 	/**
@@ -15,6 +16,7 @@ public class LoginServlet extends HttpServlet {
 	 */
 	private static final long serialVersionUID = 1L;
 
+	// doPost:HP上で入力したパラメーターを受け取る
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
@@ -34,7 +36,7 @@ public class LoginServlet extends HttpServlet {
 		// IDとパスワードのチェック
 		if (id.equals("search") && pass.equals("man")) {
 			status = "ログイン成功";
-			name = "����";
+			name = "佐藤";
 		}
 
 		// �T�[�u���b�g���g�ŕ\������
