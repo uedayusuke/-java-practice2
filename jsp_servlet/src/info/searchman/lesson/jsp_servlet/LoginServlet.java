@@ -18,22 +18,22 @@ public class LoginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		// �ϐ��̏����ݒ�
-		String name = "�Q�X�g"; // ���O�̏����l�ݒ�
-		String status = "���O�C�����s"; // ���O�C���X�e�[�^�X
+		// 変数の初期設定
+		String name = "ゲスト"; // 名前の初期値設定
+		String status = "ログイン失敗"; // ログインステータス
 
-		// �����R�[�h�̏����ݒ�
+		// 文字コードの初期値設定
 		request.setCharacterEncoding("UTF-8");
 
-		// ID�̎擾
+		// IDの取得
 		String id = request.getParameter("id");
 
-		// �p�X���[�h�̎擾
+		// パスワードの取得
 		String pass = request.getParameter("pass");
 
-		// ID�ƃp�X���[�h�̃`�F�b�N
+		// IDとパスワードのチェック
 		if (id.equals("search") && pass.equals("man")) {
-			status = "���O�C������";
+			status = "ログイン成功";
 			name = "����";
 		}
 
