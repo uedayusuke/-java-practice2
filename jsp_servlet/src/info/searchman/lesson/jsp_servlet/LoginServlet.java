@@ -51,15 +51,15 @@ public class LoginServlet extends HttpServlet {
 		out.println("</body>");
 		out.println("</html>");
 
-		// ���N�G�X�g�Ƀf�[�^��ǉ�����
+		// リクエストにデータを追加する
 		// request.setAttribute("login", status);
 		// request.setAttribute("name", name);
 
-		// HttpSession�̍쐬�ƃZ�b�V�����Ƀf�[�^��ǉ�����
+		// HttpSessionの作成とセッションにデータを追加する
 		// HttpSession session = request.getSession( true );
 		// session.setAttribute( "name", name );
 
-		// result.jsp�֓]��
+		// result.jspへ転送
 		// request.getRequestDispatcher("/result.jsp").forward(request, response);
 
 	}
