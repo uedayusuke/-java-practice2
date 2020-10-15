@@ -7,58 +7,57 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 public class LoginServlet extends HttpServlet {
 
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 1L;
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		// •Ï”‚Ì‰Šúİ’è
-		String name = "ƒQƒXƒg"; // –¼‘O‚Ì‰Šú’lİ’è
-		String status = "ƒƒOƒCƒ“¸”s"; // ƒƒOƒCƒ“ƒXƒe[ƒ^ƒX
+		// ï¿½Ïï¿½ï¿½Ìï¿½ï¿½ï¿½ï¿½İ’ï¿½
+		String name = "ï¿½Qï¿½Xï¿½g"; // ï¿½ï¿½ï¿½Oï¿½Ìï¿½ï¿½ï¿½ï¿½lï¿½İ’ï¿½
+		String status = "ï¿½ï¿½ï¿½Oï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½s"; // ï¿½ï¿½ï¿½Oï¿½Cï¿½ï¿½ï¿½Xï¿½eï¿½[ï¿½^ï¿½X
 
-		// •¶šƒR[ƒh‚Ì‰Šúİ’è
-		request.setCharacterEncoding("Windows-31J");
+		// ï¿½ï¿½ï¿½ï¿½ï¿½Rï¿½[ï¿½hï¿½Ìï¿½ï¿½ï¿½ï¿½İ’ï¿½
+		request.setCharacterEncoding("UTF-8");
 
-		// ID‚Ìæ“¾
+		// IDï¿½Ìæ“¾
 		String id = request.getParameter("id");
 
-		// ƒpƒXƒ[ƒh‚Ìæ“¾
+		// ï¿½pï¿½Xï¿½ï¿½ï¿½[ï¿½hï¿½Ìæ“¾
 		String pass = request.getParameter("pass");
 
-		// ID‚ÆƒpƒXƒ[ƒh‚Ìƒ`ƒFƒbƒN
+		// IDï¿½Æƒpï¿½Xï¿½ï¿½ï¿½[ï¿½hï¿½Ìƒ`ï¿½Fï¿½bï¿½N
 		if (id.equals("search") && pass.equals("man")) {
-			status = "ƒƒOƒCƒ“¬Œ÷";
-			name = "²“¡";
+			status = "ï¿½ï¿½ï¿½Oï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
+			name = "ï¿½ï¿½ï¿½ï¿½";
 		}
 
-		// ƒT[ƒuƒŒƒbƒg©g‚Å•\¦‚·‚é
-		response.setContentType("text/html; charset=windows-31J");
+		// ï¿½Tï¿½[ï¿½uï¿½ï¿½ï¿½bï¿½gï¿½ï¿½ï¿½gï¿½Å•\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		response.setContentType("text/html; charset=UTF-8");
 		PrintWriter out = response.getWriter();
 		out.println("<html>");
 		out.println("<head>");
 		out.println("<title></title>");
 		out.println("</head>");
 		out.println("<body><br><br>");
-		out.println(status + "<br><br>‚±‚ñ‚É‚¿‚Í " + name + " ‚³‚ñ");
+		out.println(status + "<br><br>ï¿½ï¿½ï¿½ï¿½É‚ï¿½ï¿½ï¿½ " + name + " ï¿½ï¿½ï¿½ï¿½");
 		out.println("</body>");
 		out.println("</html>");
 
-		// ƒŠƒNƒGƒXƒg‚Éƒf[ƒ^‚ğ’Ç‰Á‚·‚é
+		// ï¿½ï¿½ï¿½Nï¿½Gï¿½Xï¿½gï¿½Éƒfï¿½[ï¿½^ï¿½ï¿½Ç‰ï¿½ï¿½ï¿½ï¿½ï¿½
 		// request.setAttribute("login", status);
 		// request.setAttribute("name", name);
 
-		// HttpSession‚Ìì¬‚ÆƒZƒbƒVƒ‡ƒ“‚Éƒf[ƒ^‚ğ’Ç‰Á‚·‚é
+		// HttpSessionï¿½Ìì¬ï¿½ÆƒZï¿½bï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½Éƒfï¿½[ï¿½^ï¿½ï¿½Ç‰ï¿½ï¿½ï¿½ï¿½ï¿½
 		// HttpSession session = request.getSession( true );
 		// session.setAttribute( "name", name );
 
-		// result.jsp‚Ö“]‘—
+		// result.jspï¿½Ö“]ï¿½ï¿½
 		// request.getRequestDispatcher("/result.jsp").forward(request, response);
 
 	}
