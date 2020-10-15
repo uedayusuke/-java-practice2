@@ -39,7 +39,7 @@ public class LoginServlet extends HttpServlet {
 			name = "佐藤";
 		}
 
-		// �T�[�u���b�g���g�ŕ\������
+		// サーブレット自身で表示する
 		response.setContentType("text/html; charset=UTF-8");
 		PrintWriter out = response.getWriter();
 		out.println("<html>");
@@ -47,7 +47,7 @@ public class LoginServlet extends HttpServlet {
 		out.println("<title></title>");
 		out.println("</head>");
 		out.println("<body><br><br>");
-		out.println(status + "<br><br>����ɂ��� " + name + " ����");
+		out.println(status + "<br><br>こんにちは " + name + "さん");
 		out.println("</body>");
 		out.println("</html>");
 
