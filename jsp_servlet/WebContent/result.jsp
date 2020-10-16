@@ -9,7 +9,7 @@
 
 <%
 	String message = (String)request.getAttribute( "login" );
-	String name = (String)request.getAttribute( "name" );
+	String name = (String)session.getAttribute( "name" );
 %>
 
 <br><br>
