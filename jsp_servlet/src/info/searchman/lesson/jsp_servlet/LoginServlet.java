@@ -1,7 +1,6 @@
 package info.searchman.lesson.jsp_servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -40,27 +39,27 @@ public class LoginServlet extends HttpServlet {
 		}
 
 		// サーブレット自身で表示する
-		response.setContentType("text/html; charset=UTF-8");
-		PrintWriter out = response.getWriter();
-		out.println("<html>");
-		out.println("<head>");
-		out.println("<title></title>");
-		out.println("</head>");
-		out.println("<body><br><br>");
-		out.println(status + "<br><br>こんにちは " + name + "さん");
-		out.println("</body>");
-		out.println("</html>");
+//		response.setContentType("text/html; charset=UTF-8");
+//		PrintWriter out = response.getWriter();
+//		out.println("<html>");
+//		out.println("<head>");
+//		out.println("<title></title>");
+//		out.println("</head>");
+//		out.println("<body><br><br>");
+//		out.println(status + "<br><br>こんにちは " + name + "さん");
+//		out.println("</body>");
+//		out.println("</html>");
 
 		// リクエストにデータを追加する
-		// request.setAttribute("login", status);
-		// request.setAttribute("name", name);
+		request.setAttribute("login", status);
+		request.setAttribute("name", name);
 
 		// HttpSessionの作成とセッションにデータを追加する
 		// HttpSession session = request.getSession( true );
 		// session.setAttribute( "name", name );
 
 		// result.jspへ転送
-		// request.getRequestDispatcher("/result.jsp").forward(request, response);
+		request.getRequestDispatcher("/result.jsp").forward(request, response);
 
 	}
 }
