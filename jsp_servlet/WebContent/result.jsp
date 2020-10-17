@@ -10,6 +10,9 @@
 <%
 	String message = (String)request.getAttribute( "login" );
 	String name = (String)session.getAttribute( "name" );
+	if(name == null) {
+		message = "すでにログアウトしています";
+	}
 %>
 
 <br><br>
