@@ -19,6 +19,9 @@ String name = (String)session.getAttribute( "name" );
 
 <a href="/jsp_servlet/result.jsp">前のページに戻る</a>
 <br><br><br><br>
+<a href="/jsp_servlet/logout.jsp">ログアウト</a>
+<br><br><br><br>
+
 
 </body>
 </html>
